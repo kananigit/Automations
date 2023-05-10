@@ -1,0 +1,92 @@
+In Windows, you can easily see the location of a program using the following steps:
+
+1. Click on the "Start" button or press the Windows key on your keyboard.
+
+2. Type the name of the program in the search bar. For example, if you want to find the location of Oracle SQL Developer, type "Oracle SQL Developer" in the search bar.
+
+3. Right-click on the program in the search results and select "Open file location" from the context menu.
+
+4. This will open the folder that contains the program executable file. You can view the location of the program in the address bar at the top of the window.
+
+Alternatively, you can also view the location of a program using the following steps:
+
+1. Right-click on the program shortcut on your desktop or in the Start menu.
+
+2. Select "Properties" from the context menu.
+
+3. In the Properties window, click on the "Shortcut" tab.
+
+4. The "Target" field will show the location of the program executable file. You can copy this location or click on the "Open file location" button to open the folder that contains the file.
+
+
+
+-------------------------------------------------------------------------
+Sure! Here are the steps to open Oracle SQL Developer using UiPath, click on a specific connection, enter username and password, and run a query:
+
+1. Open UiPath Studio and create a new process.
+
+2. Drag and drop the "Start Process" activity from the Activities panel onto the Design surface.
+
+3. In the "FileName" field of the Start Process activity, enter the path to the SQL Developer executable file. For example: "C:\sqldeveloper\sqldeveloper.exe".
+
+4. In the "Arguments" field of the Start Process activity, enter the following command-line argument to connect to a specific database:
+
+```
+-connname "connection_name"
+```
+
+Replace "connection_name" with the name of the connection you want to open. For example:
+
+```
+-connname "MyConnection"
+```
+
+5. Click on the "Save" button to save the process.
+
+6. Drag and drop the "Click" activity from the Activities panel onto the Design surface.
+
+7. Click on the "Indicate on Screen" button in the properties panel of the Click activity and select the connection you want to click on in Oracle SQL Developer.
+
+8. Click on the "Save" button to save the process.
+
+9. Drag and drop the "Type Into" activity from the Activities panel onto the Design surface.
+
+10. In the "Text" field of the Type Into activity, enter the username you want to use to connect to the database.
+
+11. Use the "Indicate on Screen" button to select the username input field in Oracle SQL Developer.
+
+12. Click on the "Save" button to save the process.
+
+13. Drag and drop another "Type Into" activity from the Activities panel onto the Design surface.
+
+14. In the "Text" field of the Type Into activity, enter the password you want to use to connect to the database.
+
+15. Use the "Indicate on Screen" button to select the password input field in Oracle SQL Developer.
+
+16. Click on the "Save" button to save the process.
+
+17. Drag and drop the "Click" activity from the Activities panel onto the Design surface.
+
+18. Click on the "Indicate on Screen" button in the properties panel of the Click activity and select the "Run Script" button in Oracle SQL Developer.
+
+19. Click on the "Save" button to save the process.
+
+20. Drag and drop the "Type Into" activity from the Activities panel onto the Design surface.
+
+21. In the "Text" field of the Type Into activity, enter the SQL query you want to run.
+
+22. Use the "Indicate on Screen" button to select the query input field in Oracle SQL Developer.
+
+23. Click on the "Save" button to save the process.
+
+24. Drag and drop the "Click" activity from the Activities panel onto the Design surface.
+
+25. Click on the "Indicate on Screen" button in the properties panel of the Click activity and select the "Execute" button in Oracle SQL Developer.
+
+26. Click on the "Save" button to save the process.
+
+27. Click on the "Run" button to execute the process and open Oracle SQL Developer with the specified connection, enter the username and password, and run the query.
+
+
+--------------------------------------------------------------------------
+
